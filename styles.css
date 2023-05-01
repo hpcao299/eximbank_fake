@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', 'Arial', sans-serif;
+}
+
+.main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.bg-image {
+    background-image: url(./images/login.jpeg);
+    background-size: cover;
+    background-position: top 0 right;
+    width: calc(100vw - 550px);
+}
+
+.content {
+    flex: 1;
+    padding: 20px 65px 30px;
+    overflow: auto;
+
+    background-image: url(./images/bg_login.png);
+    background-color: #0e202c;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -40px 40px;
+    position: relative;
+    margin-top: -12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-left: -65px;
+    margin-right: -65px;
+}
+
+.features-icon {
+    background-image: url(./images/ultility_ic.svg);
+    content: '';
+    display: inline-block;
+    width: 24px;
+    position: absolute;
+    height: 24px;
+    left: 28px;
+    top: 7px;
+}
+
+.header-flag {
+    height: 24px;
+    width: 24px;
+}
+
+.login-features {
+    color: #b4e7fb;
+    border-radius: 8px;
+    padding: 6px 15px 6px 35px;
+    max-height: 40px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.slogan {
+    color: #b4e7fb;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 16px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.input-group {
+    display: flex;
+    position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 24px;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    background: #0e202c;
+    outline: none;
+
+    padding-left: 16px;
+    padding-top: 19px;
+    border-radius: 8px;
+
+    height: 56px;
+    width: 420px;
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    border-color: #b4e7fb;
+}
+
+input:not(:placeholder-shown) ~ label {
+    color: #b4e7fb;
+    -webkit-transform: scale(0.875) translateY(-50%);
+    transform: scale(0.875) translateY(-50%);
+}
+
+input:focus ~ label {
+    color: #b4e7fb;
+    font-size: 12px;
+    -webkit-transform: scale(0.875) translateY(-50%);
+    transform: scale(0.875) translateY(-50%);
+}
+
+label {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    color: white;
+
+    font-weight: 400;
+    font-size: 16px;
+
+    -webkit-transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+    font-size: 16px;
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.btn-submit {
+    background-image: linear-gradient(-120deg, #005d98 0%, #00a1e4 100%);
+    height: 44px;
+    padding: 0 16px;
+    width: 402px;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    opacity: 0.92;
+    cursor: pointer;
+}

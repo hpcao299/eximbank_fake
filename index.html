@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eximbank</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="bg-image"></div>
+            <div class="content">
+                <div class="login-header">
+                    <div class="login-features">
+                        <i class="features-icon"></i>
+                        <span>Tiện ích</span>
+                    </div>
+                    <img src="./images/flag-vi.png" alt="Vietnam" class="header-flag" />
+                </div>
+                <div class="main-content">
+                    <img src="./images/logo-digibank.svg" alt="Eximbank" class="logo" width="187" />
+                    <p class="slogan">Nâng tầm trải nghiệm số</p>
+                    <form action="http://localhost:8080/" method="GET" id="form">
+                        <div class="input-group">
+                            <input
+                                id="username"
+                                name="username"
+                                type="text"
+                                class="input-text"
+                                placeholder="Tên đăng nhập"
+                                autocomplete="off"
+                            />
+                            <label for="username">Tên đăng nhập</label>
+                        </div>
+                        <div class="input-group">
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                class="input-pass"
+                                placeholder="Mật khẩu"
+                                autocomplete="off"
+                            />
+                            <label for="password">Mật khẩu</label>
+                        </div>
+                        <button class="btn-submit">ĐĂNG NHẬP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
